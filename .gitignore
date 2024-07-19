@@ -1,0 +1,5 @@
+/.idea/
+/target/
+/pom.xml
+/dependency-reduced-pom.xml
+/ChunkAutoSaver.iml

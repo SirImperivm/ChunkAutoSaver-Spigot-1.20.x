@@ -1,0 +1,6 @@
+name: ChunkAutoSaver
+version: 1.0
+main: me.sirimperivm.spigot.Main
+api-version: '1.20'
+description: Plugin che carica automaticamente i chunk all'interno di un world border di un mondo specificato.
+author: SirImperivm_
