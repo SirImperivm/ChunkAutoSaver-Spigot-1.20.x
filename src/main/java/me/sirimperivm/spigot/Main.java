@@ -3,6 +3,7 @@ package me.sirimperivm.spigot;
 import me.sirimperivm.spigot.utils.ConfigManager;
 import me.sirimperivm.spigot.utils.DataManager;
 import me.sirimperivm.spigot.utils.colors.Colors;
+import me.sirimperivm.spigot.utils.others.Errors;
 import me.sirimperivm.spigot.utils.others.Logger;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +16,7 @@ public final class Main extends JavaPlugin {
     private Colors colors;
     private Logger log;
     private ConfigManager configManager;
+    private Errors errors;
     private DataManager data;
 
     @Override
@@ -23,6 +25,7 @@ public final class Main extends JavaPlugin {
         colors = new Colors(plugin);
         log = new Logger(plugin, "[ChunkAutoSaver]", "[CAS-Debug]");
         configManager = new ConfigManager(plugin);
+        errors = new Errors(plugin);
         data = new DataManager(plugin);
 
         log.success("Plugin attivato correttamente.");
@@ -52,6 +55,10 @@ public final class Main extends JavaPlugin {
 
     public ConfigManager getConfigManager() {
         return configManager;
+    }
+
+    public Errors getErrors() {
+        return errors;
     }
 
     public DataManager getData() {
