@@ -2,6 +2,7 @@ package me.sirimperivm.spigot.utils;
 
 import me.sirimperivm.spigot.Main;
 import me.sirimperivm.spigot.utils.others.Logger;
+import me.sirimperivm.spigot.utils.tables.Tasks;
 
 import java.io.File;
 import java.sql.Connection;
@@ -25,6 +26,8 @@ public class DataManager {
 
     private Connection conn;
 
+    private Tasks tasks;
+
     private boolean createConnection() {
         try {
             File folder = plugin.getDataFolder();
@@ -46,6 +49,7 @@ public class DataManager {
         if (!createConnection()) {
             plugin.disablePlugin();
         }
+        tasks = new Tasks(this);
     }
 
     public void closeConnection() {
@@ -59,5 +63,17 @@ public class DataManager {
                 e.printStackTrace();
             }
         }
+    }
+
+    public Main getPlugin() {
+        return plugin;
+    }
+
+    public Connection getConn() {
+        return conn;
+    }
+
+    public Tasks getTasks() {
+        return tasks;
     }
 }

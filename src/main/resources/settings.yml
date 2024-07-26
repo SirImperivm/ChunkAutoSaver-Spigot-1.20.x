@@ -1,0 +1,11 @@
+settings:
+  general:
+    debug: true
+  chunk-loading:
+    tick-speed: 1
+permissions:
+  commands:
+    main-command:
+      main: cas.main
+      reload: cas.reload
+      new: cas.new

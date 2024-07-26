@@ -4,3 +4,8 @@ main: me.sirimperivm.spigot.Main
 api-version: '1.20'
 description: Plugin che carica automaticamente i chunk all'interno di un world border di un mondo specificato.
 author: SirImperivm_
+
+commands:
+  chunkautosaver:
+    aliases:
+      - cas

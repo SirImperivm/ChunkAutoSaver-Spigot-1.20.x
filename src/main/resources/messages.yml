@@ -2,3 +2,24 @@ no-perm:
   command: "&8[&c!&8] &7Necessiti del permesso &c{node}&7 per eseguire questo comando."
   action: "&8[&c!&8] &7Necessiti del permesso &c{node}&7 per eseguire quest'azione."
 no-console: "&8[&c!&8] &7Questo comando è eseguibile solo da utenti in gioco."
+page-not-found: "&8[&c!&8] &7La pagina &c{page}&7 non è stata trovata."
+invalid-args:
+  number-required: "&8[&c!&8] &7L'argomento &c{arg}&7 non è valido, è richiesto un numero."
+plugin-reloaded: "&8[&a!&8] &7Plugin ricaricato con successo."
+world-not-exists: "&8[&c!&8] &7Il mondo &c{world}&7 non esiste."
+task-added: "&8[&a!&8] &7Task aggiunta con successo, riavvia il server per farla caricare."
+cant-join: "&8[&c!&8] &7Stiamo caricando i chunk di un mondo, non si può entrare per ora."
+
+helps-creator:
+  main-command:
+    header: "{#AA5BFF>}&m                              {#4200FF<}"
+    title: "{#167978}&lHelp {#FF42F6>}&lChunkAutoSaver{#FF8933<}"
+    spacer: "&r"
+    line-format: "{command-name} &7- {command-description}"
+    page-format: "{#167978}Pagina: &7{currentpage}"
+    footer: "{#AA5BFF>}&m                              {#4200FF<}"
+    lines:
+      - "{#167978}/{#558DFF}chunkautosaver(cas) help {#41FF58}[page]-{#558DFF}Mostra queste linee di dialogo."
+      - "{#167978}/{#558DFF}chunkautosaver(cas) reload-{#558DFF}Ricarica il plugin."
+      - "{#167978}/{#558DFF}chunkautosaver(cas) new {#41FF58}<mondo> <area>-{#558DFF}Aggiungi una task da eseguire per caricare i chunk di un mondo."
+    max-lines-per-page: 4
